@@ -9,43 +9,42 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-
-    <!--menu-->
-    <header id="menu">
-        <nav>
-            <ul>
-                <li><a href="index.html">Xela Hotel</a></li>
-                <li><a href="info.html">Info</a></li>
-                <li><a href="rooms.html">Rooms</a>
-            </ul>               
-            <ul>
-                <li><a href="rooms.html#picadilly">Picadilly</a></li>
-                <li><a href="rooms.html#cambridge">Cambridge</a></li>
-                <li><a href="rooms.html#westminster">Westminster</a></li>
-            </ul>                 
-            <ul>
-                <li><a href="dining.html">Dining</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    
+    <!--header-->
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__content">
+                <li class="nav__content__item"><a class="nav__content__item__link" href="index.html">Xela Hotel</a></li>
+                <li class="nav__content__item"><a class="nav__content__item__link" href="info.html">Info</a></li>
+                <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html">Rooms</a>
+                    <ul class="nav__content">
+                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#picadilly">Picadilly</a></li>
+                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#cambridge">Cambridge</a></li>
+                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#westminster">Westminster</a></li>
+                    </ul> 
+                </li>
+                <li class="nav__content__item"><a class="nav__content__item__link" href="contact.html">Contact</a></li>
+                <li class="nav__content__item"><a class="nav__content__item__link" href="dining.html">Dining</a></li>
+            </ul>                                     
         </nav>    
     </header>
 
-    <!--content-->
-    <main id="content">
+    <!--container-->
+    <main class="container">
 
         <!--form-->
-        <div id="form">
+        <div class="container__form">
             <h1>Contact</h1>
-        <form>
-            <div>
+        <form class="form">
+            <div class="form__name">
                 <label for="nombre">Name</label>
                 <input id="nombre" name="nombre" />
             </div>
-            <div>
+            <div class="form__surname">
                 <label for="surname">Surname</label>
                 <input id="surname" name="surname" />
             </div>
-            <div>
+            <div class="form__rooms">
                 <label for="rooms">Rooms</label>
                 <select id="rooms" name="rooms">
                     <option value="1">Picadilly</option>
@@ -53,26 +52,26 @@
                     <option value="3">Westminster</option>
                 </select>
             </div>
-            <div>
+            <div class="form__customer">
                 <label >Customer?</label>
                 <label >Yes </label>
                 <input type="radio" name="customer" value="1" checked>
                 <label >No </label>
                 <input type="radio" name="customer" value="0" >
             </div>
-            <button>Enviar</button>
-            <button>Cancelar</button>  
+            <button class="form__btn form__btn--success">Enviar</button>
+            <button class="form__btn form__btn--danger">Cancelar</button>  
         </form>
         </div>
 
     </main>
 
     <!--footer-->
-    <footer>
-        <ul>
-            <li><a href="https://twitter.com"><img  src="assets/social/twitter.png" alt="icon for twitter"></a></li>
-            <li><a href="http://www.facebook.com"><img src="assets/social/facebook.png" alt="icon for facebook"></a></li>
-            <li><a href="http://www.youtube.com"><img  src="assets/social/youtube.png" alt="icon for youtube"></a></li>
+    <footer class="footer">
+        <ul class="footer__content">
+            <li class="footer__content__item"><a class="footer__content__item__link" href="https://twitter.com"><img  src="assets/social/twitter.png" alt="icon for twitter"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.facebook.com"><img src="assets/social/facebook.png" alt="icon for facebook"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.youtube.com"><img  src="assets/social/youtube.png" alt="icon for youtube"></a></li>
         </ul>
     </footer>
 

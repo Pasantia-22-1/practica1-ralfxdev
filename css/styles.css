@@ -10,16 +10,16 @@ body {
     background-color: #fdfdfd;
 }
 
-#menu {
+.header {
     background-color: #046475;
     padding: 2rem;
 }
 
-#menu nav ul li {
+.nav__content__item {
     list-style: none;
 }
 
-#menu nav ul li a {
+.nav__content__item__link {
     float: left;
     padding-left: 2rem;
     text-decoration: none;

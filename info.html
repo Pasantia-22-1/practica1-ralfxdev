@@ -10,34 +10,33 @@
 </head>
 <body>
 
-    <!--menu-->
-    <header id="menu">
-        <nav>
-            <ul>
-                <li><a href="index.html">Xela Hotel</a></li>
-                <li><a href="info.html">Info</a></li>
-                <li><a href="rooms.html">Rooms</a>
-            </ul>               
-            <ul>
-                <li><a href="rooms.html#picadilly">Picadilly</a></li>
-                <li><a href="rooms.html#cambridge">Cambridge</a></li>
-                <li><a href="rooms.html#westminster">Westminster</a></li>
-            </ul>                 
-            <ul>
-                <li><a href="dining.html">Dining</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <!--header-->
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__content">
+                <li class="nav__content__item"><a class="nav__content__item__link" href="index.html">Xela Hotel</a></li>
+                <li class="nav__content__item"><a class="nav__content__item__link" href="info.html">Info</a></li>
+                <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html">Rooms</a>
+                    <ul class="nav__content">
+                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#picadilly">Picadilly</a></li>
+                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#cambridge">Cambridge</a></li>
+                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#westminster">Westminster</a></li>
+                    </ul> 
+                </li>
+                <li class="nav__content__item"><a class="nav__content__item__link" href="contact.html">Contact</a></li>
+                <li class="nav__content__item"><a class="nav__content__item__link" href="dining.html">Dining</a></li>
+            </ul>                                     
         </nav>    
     </header>
 
-    <!--content-->
-    <main id="content">
+    <!--container-->
+    <main class="container">
 
         <!--info-article-->
-        <div id="info-articles">
-            <article>
+        <div class="container__info">
+            <article class="container__info__article">
                 <h1>Essential Info</h1>
-                <section id="arrivalinfo">
+                <section class="container__info__article__section" id="arrivalinfo">
                     <h2 ><span>Arrival</span> Information</h2>
                     <ul>
                         <li><strong>Check-in:</strong><span> 3:00 PM</span></li>
@@ -48,7 +47,7 @@
                         <li><strong>Pet Policy:</strong><span> Pets of all sizes and types are allowed in designated pet rooms, and the specified common areas. Service animals are allowed everywhere.</span></li>
                     </ul>
                 </section>
-                <section id="greenprogram">
+                <section class="container__info__article__section" id="greenprogram">
                     <h2>Landon Green Program</h2>
                     <p><strong>The Landon Hotel - London</strong> was recently renovated, and we considered the impact on the earth the entire way. From green building materials, to solar power, to energy-friendly lighting and appliances throughout the hotel - we’re saving energy in every socket, outlet, and switch. We’ve also initiated a recycling and composting program that reduces the load to local landfills, while providing valuable raw material for use in new products, or in the case of compost, for use in local gardens and landscapes.</p>
                 </section>
@@ -56,9 +55,9 @@
         </div>
 
         <!--info-aside-->
-        <div id="info-aside">
-            <aside>
-                <section id="services">
+        <div class="container__info">
+            <aside class="container__info__aside">
+                <section class="container__info__aside__section" id="services">
                     <h2>Services and Amenities</h2>
                     <p>Our services and amenities are designed to make your travel easy, your stay comfortable, and your experience one-of-a-kind.</p>
                     <ul>
@@ -79,7 +78,7 @@
                         <li>Pet-friendly rooms  &amp; common areas</li>
                     </ul>
                 </section>
-                <section  id="accessibility">
+                <section class="container__info__aside__section"  id="accessibility">
                     <h2>Accessibility</h2>
                     <p>We're committed to maintaining the same quality of service for every individual. We offer the following facilities for those with special needs:</p>
                     <ul>
@@ -104,11 +103,11 @@
     </main>
 
     <!--footer-->
-    <footer>
-        <ul>
-            <li><a href="https://twitter.com"><img  src="assets/social/twitter.png" alt="icon for twitter"></a></li>
-            <li><a href="http://www.facebook.com"><img src="assets/social/facebook.png" alt="icon for facebook"></a></li>
-            <li><a href="http://www.youtube.com"><img  src="assets/social/youtube.png" alt="icon for youtube"></a></li>
+    <footer class="footer">
+        <ul class="footer__content">
+            <li class="footer__content__item"><a class="footer__content__item__link" href="https://twitter.com"><img  src="assets/social/twitter.png" alt="icon for twitter"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.facebook.com"><img src="assets/social/facebook.png" alt="icon for facebook"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.youtube.com"><img  src="assets/social/youtube.png" alt="icon for youtube"></a></li>
         </ul>
     </footer>
 
