@@ -2,21 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Xela Info</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xela Hotel</title>
+    <!--styles css-->
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <header>
-            <nav>
-                    <li><a href="index.html">Xela Hotel</a></li>
-                    <li><a href="info.html">Info</a></li>
-                    <li><a href="rooms.html">Rooms</a></li>
-                    <li><a href="dining.html">Dining</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-            </nav>
-        </header>
-        <main>
+
+    <!--menu-->
+    <header id="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Xela Hotel</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="rooms.html">Rooms</a>
+            </ul>               
+            <ul>
+                <li><a href="rooms.html#picadilly">Picadilly</a></li>
+                <li><a href="rooms.html#cambridge">Cambridge</a></li>
+                <li><a href="rooms.html#westminster">Westminster</a></li>
+            </ul>                 
+            <ul>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <!--content-->
+    <main id="content">
+
+        <!--info-article-->
+        <div id="info-articles">
             <article>
                 <h1>Essential Info</h1>
                 <section id="arrivalinfo">
@@ -35,7 +53,10 @@
                     <p><strong>The Landon Hotel - London</strong> was recently renovated, and we considered the impact on the earth the entire way. From green building materials, to solar power, to energy-friendly lighting and appliances throughout the hotel - we’re saving energy in every socket, outlet, and switch. We’ve also initiated a recycling and composting program that reduces the load to local landfills, while providing valuable raw material for use in new products, or in the case of compost, for use in local gardens and landscapes.</p>
                 </section>
             </article>
+        </div>
 
+        <!--info-aside-->
+        <div id="info-aside">
             <aside>
                 <section id="services">
                     <h2>Services and Amenities</h2>
@@ -77,16 +98,19 @@
                         <li>Telephones with volume control</li>
                     </ul>
                 </section>
-            </aside>
-        </main>
+            </aside> 
+        </div> 
 
-        <footer >
-                <ul>
-                    <li><a href="https://twitter.com"><img  src="assets/social/twitter.png" alt="icon for twitter"></a></li>
-                    <li><a href="http://www.facebook.com"><img  src="assets/social/facebook.png" alt="icon for facebook"></a></li>
-                    <li><a href="http://www.youtube.com"><img " src="assets/social/youtube.png" alt="icon for youtube"></a></li>
-                </ul>
-        </footer>
-    </div>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <ul>
+            <li><a href="https://twitter.com"><img  src="assets/social/twitter.png" alt="icon for twitter"></a></li>
+            <li><a href="http://www.facebook.com"><img src="assets/social/facebook.png" alt="icon for facebook"></a></li>
+            <li><a href="http://www.youtube.com"><img  src="assets/social/youtube.png" alt="icon for youtube"></a></li>
+        </ul>
+    </footer>
+
 </body>
 </html>
