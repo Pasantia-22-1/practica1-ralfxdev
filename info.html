@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xela Hotel</title>
+    <!--icon-->
+    <link rel="icon" href="./assets/icons/info.png">
     <!--styles css-->
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -14,37 +16,56 @@
     <header class="header">
         <nav class="nav">
             <ul class="nav__content">
-                <li class="nav__content__item"><a class="nav__content__item__link" href="index.html">Xela Hotel</a></li>
-                <li class="nav__content__item"><a class="nav__content__item__link" href="info.html">Info</a></li>
-                <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html">Rooms</a>
-                    <ul class="nav__content">
-                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#picadilly">Picadilly</a></li>
-                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#cambridge">Cambridge</a></li>
-                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#westminster">Westminster</a></li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/info.png" alt="info">
+                    <a class="nav__content__item__link" href="index.html">Xela Hotel</a>
+                </li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/attractions.png" alt="info">
+                    <a class="nav__content__item__link" href="info.html">Info</a>
+                </li>
+                <li class="nav__content__item nav__content__item--subnav">
+                    <img class="nav__content__item__img" src="./assets/icons/rooms.png" alt="rooms">
+                    <a class="nav__content__item__link" href="rooms.html">Rooms</a>
+                    <ul class="subnav__content">
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#picadilly">Picadilly</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#cambridge">Cambridge</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#westminster">Westminster</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#oxford">Oxford</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#victoria">Victoria</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#manchester">Manchester</a></li>
                     </ul> 
                 </li>
-                <li class="nav__content__item"><a class="nav__content__item__link" href="contact.html">Contact</a></li>
-                <li class="nav__content__item"><a class="nav__content__item__link" href="dining.html">Dining</a></li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/events.png" alt="contact">
+                    <a class="nav__content__item__link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/dining.png" alt="dining">
+                    <a class="nav__content__item__link" href="dining.html">Dining</a>
+                </li>
             </ul>                                     
         </nav>    
     </header>
 
+
     <!--container-->
     <main class="container">
 
-        <!--info-article-->
-        <div class="container__info">
+        <div class="container__wrapper">
+            
+            <!--info-article-->
             <article class="container__info__article">
-                <h1>Essential Info</h1>
+                <h1 class="container__info__article--pb">Essential Info</h1>
                 <section class="container__info__article__section" id="arrivalinfo">
-                    <h2 ><span>Arrival</span> Information</h2>
+                    <h2 class="container__info__article--pb"><span class="container__info__article--span">Arrival</span> Information</h2>
                     <ul>
-                        <li><strong>Check-in:</strong><span> 3:00 PM</span></li>
-                        <li><strong>Check-out:</strong><span> 11:00 AM</span></li>
-                        <li><strong>Parking:</strong><span> Self-parking in the underground garage is ￡15 per day and valet-parking is ￡50 per day.</span></li>
-                        <li><strong>Airport Shuttle:</strong><span> Our complimentary airport shuttles leave every hour on the hour, and make trips to Heathrow and Gatwick airports.</span></li>
-                        <li><strong>Trains:</strong><span> <span>The nearest</span> Underground station is at Leicester Square.</span></li>
-                        <li><strong>Pet Policy:</strong><span> Pets of all sizes and types are allowed in designated pet rooms, and the specified common areas. Service animals are allowed everywhere.</span></li>
+                        <li class="container__info__article--bg container__info__article--pb"><strong>Check-in:</strong><span class="container__info__article--hidden"> 3:00 PM</span></li>
+                        <li class="container__info__article--bg container__info__article--pb"><strong>Check-out:</strong><span class="container__info__article--hidden"> 11:00 AM</span></li>
+                        <li class="container__info__article--bg container__info__article--pb"><strong>Parking:</strong><span class="container__info__article--hidden"> Self-parking in the underground garage is ￡15 per day and valet-parking is ￡50 per day.</span></li>
+                        <li class="container__info__article--bg container__info__article--pb"><strong>Airport Shuttle:</strong><span class="container__info__article--hidden"> Our complimentary airport shuttles leave every hour on the hour, and make trips to Heathrow and Gatwick airports.</span></li>
+                        <li class="container__info__article--bg container__info__article--pb"><strong>Trains:</strong><span class="container__info__article--hidden"> <span>The nearest</span> Underground station is at Leicester Square.</span></li>
+                        <li class="container__info__article--bg container__info__article--pb"><strong>Pet Policy:</strong><span class="container__info__article--hidden"> Pets of all sizes and types are allowed in designated pet rooms, and the specified common areas. Service animals are allowed everywhere.</span></li>
                     </ul>
                 </section>
                 <section class="container__info__article__section" id="greenprogram">
@@ -52,62 +73,61 @@
                     <p><strong>The Landon Hotel - London</strong> was recently renovated, and we considered the impact on the earth the entire way. From green building materials, to solar power, to energy-friendly lighting and appliances throughout the hotel - we’re saving energy in every socket, outlet, and switch. We’ve also initiated a recycling and composting program that reduces the load to local landfills, while providing valuable raw material for use in new products, or in the case of compost, for use in local gardens and landscapes.</p>
                 </section>
             </article>
-        </div>
+           
 
-        <!--info-aside-->
-        <div class="container__info">
+            <!--info-aside-->
             <aside class="container__info__aside">
                 <section class="container__info__aside__section" id="services">
-                    <h2>Services and Amenities</h2>
-                    <p>Our services and amenities are designed to make your travel easy, your stay comfortable, and your experience one-of-a-kind.</p>
-                    <ul>
-                        <li>Indoor pool</li>
-                        <li>24-hour fitness center</li>
-                        <li>Massage therapy</li>
-                        <li>Full service spa</li>
-                        <li>In-room jacuzzi tubs</li>
-                        <li>Rooftop café  &amp; smoothie bar</li>
-                        <li>Coffee bar  &amp; pastry shop</li>
-                        <li>Traditional continental breakfast</li>
-                        <li>24-hour concierge service</li>
-                        <li>Business center</li>
-                        <li>Complimentary wireless service</li>
-                        <li>Laundry &amp; dry cleaning service</li>
-                        <li>Daily paper</li>
-                        <li>Certified "green" hotel</li>
-                        <li>Pet-friendly rooms  &amp; common areas</li>
+                    <h2 class="container__info__aside--p">Services and Amenities</h2>
+                    <p class="container__info__aside--p">Our services and amenities are designed to make your travel easy, your stay comfortable, and your experience one-of-a-kind.</p>
+                    <ul class="container__info__aside--bg">
+                        <li class="container__info__aside--bg-red">Indoor pool</li>
+                        <li class="container__info__aside--bg-red">24-hour fitness center</li>
+                        <li class="container__info__aside--bg-red">Massage therapy</li>
+                        <li class="container__info__aside--bg-red">Full service spa</li>
+                        <li class="container__info__aside--bg-red">In-room jacuzzi tubs</li>
+                        <li class="container__info__aside--bg-red">Rooftop café  &amp; smoothie bar</li>
+                        <li class="container__info__aside--bg-red">Coffee bar  &amp; pastry shop</li>
+                        <li class="container__info__aside--bg-red">Traditional continental breakfast</li>
+                        <li class="container__info__aside--bg-red">24-hour concierge service</li>
+                        <li class="container__info__aside--bg-red">Business center</li>
+                        <li class="container__info__aside--bg-red">Complimentary wireless service</li>
+                        <li class="container__info__aside--bg-red">Laundry &amp; dry cleaning service</li>
+                        <li class="container__info__aside--bg-red">Daily paper</li>
+                        <li class="container__info__aside--bg-red">Certified "green" hotel</li>
+                        <li class="container__info__aside--bg-red">Pet-friendly rooms  &amp; common areas</li>
                     </ul>
                 </section>
                 <section class="container__info__aside__section"  id="accessibility">
-                    <h2>Accessibility</h2>
-                    <p>We're committed to maintaining the same quality of service for every individual. We offer the following facilities for those with special needs:</p>
-                    <ul>
-                        <li>Grab bars on tub walls</li>
-                        <li>Shower chairs</li>
-                        <li>Hand held shower sprayers</li>
-                        <li>Higher toilets &amp; toilet modifiers</li>
-                        <li>Lower sink faucet handles</li>
-                        <li>Wheelchair clearance under sinks &amp; vanity</li>
-                        <li>Lower racks in closet</li>
-                        <li>TDD machines</li>
-                        <li>Telephone light signalers  &amp; smoke alarms</li>
-                        <li>Telephone amplification handsets</li>
-                        <li>Closed captioned television converters</li>
-                        <li>Vibrating alarm clocks</li>
-                        <li>Telephones with volume control</li>
+                    <h2 class="container__info__aside--p">Accessibility</h2>
+                    <p class="container__info__aside--p">We're committed to maintaining the same quality of service for every individual. We offer the following facilities for those with special needs:</p>
+                    <ul class="container__info__aside--bg">
+                        <li class="container__info__aside--bg-gray">Grab bars on tub walls</li>
+                        <li class="container__info__aside--bg-gray">Shower chairs</li>
+                        <li class="container__info__aside--bg-gray">Hand held shower sprayers</li>
+                        <li class="container__info__aside--bg-gray">Higher toilets &amp; toilet modifiers</li>
+                        <li class="container__info__aside--bg-gray">Lower sink faucet handles</li>
+                        <li class="container__info__aside--bg-gray">Wheelchair clearance under sinks &amp; vanity</li>
+                        <li class="container__info__aside--bg-gray">Lower racks in closet</li>
+                        <li class="container__info__aside--bg-gray">TDD machines</li>
+                        <li class="container__info__aside--bg-gray">Telephone light signalers  &amp; smoke alarms</li>
+                        <li class="container__info__aside--bg-gray">Telephone amplification handsets</li>
+                        <li class="container__info__aside--bg-gray">Closed captioned television converters</li>
+                        <li class="container__info__aside--bg-gray">Vibrating alarm clocks</li>
+                        <li class="container__info__aside--bg-gray">Telephones with volume control</li>
                     </ul>
                 </section>
             </aside> 
-        </div> 
+        </div>
 
     </main>
 
     <!--footer-->
     <footer class="footer">
         <ul class="footer__content">
-            <li class="footer__content__item"><a class="footer__content__item__link" href="https://twitter.com"><img  src="assets/social/twitter.png" alt="icon for twitter"></a></li>
-            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.facebook.com"><img src="assets/social/facebook.png" alt="icon for facebook"></a></li>
-            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.youtube.com"><img  src="assets/social/youtube.png" alt="icon for youtube"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="https://twitter.com"><img class="footer__content__item__link__img" src="assets/social/twitter.png" alt="icon for twitter"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.facebook.com"><img class="footer__content__item__link__img" src="assets/social/facebook.png" alt="icon for facebook"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.youtube.com"><img class="footer__content__item__link__img" src="assets/social/youtube.png" alt="icon for youtube"></a></li>
         </ul>
     </footer>
 

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xela Hotel</title>
+    <!--icon-->
+    <link rel="icon" href="./assets/icons/info.png">
     <!--styles css-->
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -14,17 +16,34 @@
     <header class="header">
         <nav class="nav">
             <ul class="nav__content">
-                <li class="nav__content__item"><a class="nav__content__item__link" href="index.html">Xela Hotel</a></li>
-                <li class="nav__content__item"><a class="nav__content__item__link" href="info.html">Info</a></li>
-                <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html">Rooms</a>
-                    <ul class="nav__content">
-                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#picadilly">Picadilly</a></li>
-                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#cambridge">Cambridge</a></li>
-                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#westminster">Westminster</a></li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/info.png" alt="info">
+                    <a class="nav__content__item__link" href="index.html">Xela Hotel</a>
+                </li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/attractions.png" alt="info">
+                    <a class="nav__content__item__link" href="info.html">Info</a>
+                </li>
+                <li class="nav__content__item nav__content__item--subnav">
+                    <img class="nav__content__item__img" src="./assets/icons/rooms.png" alt="rooms">
+                    <a class="nav__content__item__link" href="rooms.html">Rooms</a>
+                    <ul class="subnav__content">
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#picadilly">Picadilly</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#cambridge">Cambridge</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#westminster">Westminster</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#oxford">Oxford</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#victoria">Victoria</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#manchester">Manchester</a></li>
                     </ul> 
                 </li>
-                <li class="nav__content__item"><a class="nav__content__item__link" href="contact.html">Contact</a></li>
-                <li class="nav__content__item"><a class="nav__content__item__link" href="dining.html">Dining</a></li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/events.png" alt="contact">
+                    <a class="nav__content__item__link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/dining.png" alt="dining">
+                    <a class="nav__content__item__link" href="dining.html">Dining</a>
+                </li>
             </ul>                                     
         </nav>    
     </header>
@@ -34,34 +53,34 @@
 
         <!--form-->
         <div class="container__form">
-            <h1>Contact</h1>
-        <form class="form">
-            <div class="form__name">
-                <label for="nombre">Name</label>
-                <input id="nombre" name="nombre" />
-            </div>
-            <div class="form__surname">
-                <label for="surname">Surname</label>
-                <input id="surname" name="surname" />
-            </div>
-            <div class="form__rooms">
-                <label for="rooms">Rooms</label>
-                <select id="rooms" name="rooms">
-                    <option value="1">Picadilly</option>
-                    <option value="2">Cambridge</option>
-                    <option value="3">Westminster</option>
-                </select>
-            </div>
-            <div class="form__customer">
-                <label >Customer?</label>
-                <label >Yes </label>
-                <input type="radio" name="customer" value="1" checked>
-                <label >No </label>
-                <input type="radio" name="customer" value="0" >
-            </div>
-            <button class="form__btn form__btn--success">Enviar</button>
-            <button class="form__btn form__btn--danger">Cancelar</button>  
-        </form>
+            <h1 class="container__contact--pb">Contact</h1>
+            <form class="form">
+                <div class="form__name container__contact--pb">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" />
+                </div>
+                <div class="form__surname container__contact--pb">
+                    <label for="surname">Surname</label>
+                    <input id="surname" name="surname" />
+                </div>
+                <div class="form__rooms container__contact--pb">
+                    <label for="rooms">Rooms</label>
+                    <select id="rooms" name="rooms">
+                        <option value="1">Picadilly</option>
+                        <option value="2">Cambridge</option>
+                        <option value="3">Westminster</option>
+                    </select>
+                </div>
+                <div class="form__customer container__contact--pb">
+                    <label >Customer?</label>
+                    <label class="form__customer__container__contact--ml" >Yes </label>
+                    <input type="radio" name="customer" value="1" checked>
+                    <label class="form__customer__container__contact--ml" >No </label>
+                    <input type="radio" name="customer" value="0" >
+                </div>
+                <button class="form__btn form__btn--success">Enviar</button>
+                <button class="form__btn form__btn--ml form__btn--danger">Cancelar</button>  
+            </form>
         </div>
 
     </main>
@@ -69,9 +88,9 @@
     <!--footer-->
     <footer class="footer">
         <ul class="footer__content">
-            <li class="footer__content__item"><a class="footer__content__item__link" href="https://twitter.com"><img  src="assets/social/twitter.png" alt="icon for twitter"></a></li>
-            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.facebook.com"><img src="assets/social/facebook.png" alt="icon for facebook"></a></li>
-            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.youtube.com"><img  src="assets/social/youtube.png" alt="icon for youtube"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="https://twitter.com"><img class="footer__content__item__link__img" src="assets/social/twitter.png" alt="icon for twitter"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.facebook.com"><img class="footer__content__item__link__img" src="assets/social/facebook.png" alt="icon for facebook"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.youtube.com"><img class="footer__content__item__link__img" src="assets/social/youtube.png" alt="icon for youtube"></a></li>
         </ul>
     </footer>
 

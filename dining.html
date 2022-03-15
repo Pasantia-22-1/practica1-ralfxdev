@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xela Hotel</title>
+    <!--icon-->
+    <link rel="icon" href="./assets/icons/info.png">
     <!--styles css-->
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -14,17 +16,34 @@
     <header class="header">
         <nav class="nav">
             <ul class="nav__content">
-                <li class="nav__content__item"><a class="nav__content__item__link" href="index.html">Xela Hotel</a></li>
-                <li class="nav__content__item"><a class="nav__content__item__link" href="info.html">Info</a></li>
-                <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html">Rooms</a>
-                    <ul class="nav__content">
-                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#picadilly">Picadilly</a></li>
-                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#cambridge">Cambridge</a></li>
-                        <li class="nav__content__item nav__content__item--subnav"><a class="nav__content__item__link" href="rooms.html#westminster">Westminster</a></li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/info.png" alt="info">
+                    <a class="nav__content__item__link" href="index.html">Xela Hotel</a>
+                </li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/attractions.png" alt="info">
+                    <a class="nav__content__item__link" href="info.html">Info</a>
+                </li>
+                <li class="nav__content__item nav__content__item--subnav">
+                    <img class="nav__content__item__img" src="./assets/icons/rooms.png" alt="rooms">
+                    <a class="nav__content__item__link" href="rooms.html">Rooms</a>
+                    <ul class="subnav__content">
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#picadilly">Picadilly</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#cambridge">Cambridge</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#westminster">Westminster</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#oxford">Oxford</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#victoria">Victoria</a></li>
+                        <li class="subnav__content__item"><a class="subnav__content__item__link" href="rooms.html#manchester">Manchester</a></li>
                     </ul> 
                 </li>
-                <li class="nav__content__item"><a class="nav__content__item__link" href="contact.html">Contact</a></li>
-                <li class="nav__content__item"><a class="nav__content__item__link" href="dining.html">Dining</a></li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/events.png" alt="contact">
+                    <a class="nav__content__item__link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav__content__item">
+                    <img class="nav__content__item__img" src="./assets/icons/dining.png" alt="dining">
+                    <a class="nav__content__item__link" href="dining.html">Dining</a>
+                </li>
             </ul>                                     
         </nav>    
     </header>
@@ -35,25 +54,25 @@
         <!--dining-->
         <div class="container__dining">
             <article class="container__dining__article">
-                <h1 class="container__dining__article__title">Dining in the Area</h1>
-                <p class="container__dining__article__text">The West End is a foodie’s paradise, and the Xela Hotel is in the center of it all. With options for traditional English, Italian, Indian, American, Chinese, and French cuisines, all within two blocks of the hotel, and a variety of tasty culinary delights from many other countries, within a half-mile radius, the only trouble you’ll have is choosing!</p>
+                <h1 class="container__dining__article--pb">Dining in the Area</h1>
+                <p class="container__dining__article--pb">The West End is a foodie’s paradise, and the Xela Hotel is in the center of it all. With options for traditional English, Italian, Indian, American, Chinese, and French cuisines, all within two blocks of the hotel, and a variety of tasty culinary delights from many other countries, within a half-mile radius, the only trouble you’ll have is choosing!</p>
 
                 <section class="container__dining__article__section" id="rooftopcafe">
-                    <h2>Rooftop Café</h2>
-                    <div><img src="assets/dining/dining_rooftop.jpg" alt="Dining"></div>
-                    <p>Landon Rooftop Café is the destination for five star dining. Our master chefs are trained to meet special dietary needs, and we offer a range of vegetarian/vegan, kosher, gluten, and dairy free selections to accommodate our guests. Whether you’re in the mood for our award winning roast beef, fresh select salads, appetizing lunch entrees, or delectable desserts, we have you covered.</p>
+                    <h2 class="container__dining__article--pb">Rooftop Café</h2>
+                    <div class="container__dining__article--pb container__dining__article__img"><img src="assets/dining/dining_rooftop.jpg" alt="Dining"></div>
+                    <p class="container__dining__article--pb">Landon Rooftop Café is the destination for five star dining. Our master chefs are trained to meet special dietary needs, and we offer a range of vegetarian/vegan, kosher, gluten, and dairy free selections to accommodate our guests. Whether you’re in the mood for our award winning roast beef, fresh select salads, appetizing lunch entrees, or delectable desserts, we have you covered.</p>
                 </section>
 
                 <section class="container__dining__article__section" id="smoothiebar">
-                    <h2>Smoothie Bar</h2>
-                    <div><img src="assets/dining/dining_smoothiebar.jpg" alt="Dining"></div>
-                    <p>The Rooftop Smoothie Bar gives you panoramic views of the city, where you can have one of our specialty smoothies while you wait for your table. Our top mixologists are constantly bringing new and unique offerings to our smoothie menu. We have a wide range of locally grown, fresh fruit and vegetable choices to make you custom blended drinks.  We also have seasonal selections that you won’t find anywhere else.</p>
+                    <h2 class="container__dining__article--pb">Smoothie Bar</h2>
+                    <div class="container__dining__article--pb container__dining__article__img"><img src="assets/dining/dining_smoothiebar.jpg" alt="Dining"></div>
+                    <p class="container__dining__article--pb">The Rooftop Smoothie Bar gives you panoramic views of the city, where you can have one of our specialty smoothies while you wait for your table. Our top mixologists are constantly bringing new and unique offerings to our smoothie menu. We have a wide range of locally grown, fresh fruit and vegetable choices to make you custom blended drinks.  We also have seasonal selections that you won’t find anywhere else.</p>
                 </section>
 
                 <section class="container__dining__article__section" id="coffeebar">
-                    <h2>Breakfast &amp; Coffee Bar</h2>
-                    <div><img src="assets/dining/dining_lattes.jpg" alt="Dining"></div>
-                    <p>Our traditional breakfast and coffee bar, located adjacent to our lounge, are the perfect way to start your morning. We offer a wide selection of seasonal fresh fruit, a variety of cereals, croissants, crusty sourdough bread, cook-to-order eggs and omelettes, fresh juice, coffee, and teas. Breakfast is served from 7:00 am to 10:00 am daily. Our coffee bar is open until 6:30 pm daily.</p>
+                    <h2 class="container__dining__article--pb">Breakfast &amp; Coffee Bar</h2>
+                    <div class="container__dining__article--pb container__dining__article__img"><img src="assets/dining/dining_lattes.jpg" alt="Dining"></div>
+                    <p class="container__dining__article--pb">Our traditional breakfast and coffee bar, located adjacent to our lounge, are the perfect way to start your morning. We offer a wide selection of seasonal fresh fruit, a variety of cereals, croissants, crusty sourdough bread, cook-to-order eggs and omelettes, fresh juice, coffee, and teas. Breakfast is served from 7:00 am to 10:00 am daily. Our coffee bar is open until 6:30 pm daily.</p>
                 </section>
             </article> 
         </div> 
@@ -63,9 +82,9 @@
     <!--footer-->
     <footer class="footer">
         <ul class="footer__content">
-            <li class="footer__content__item"><a class="footer__content__item__link" href="https://twitter.com"><img  src="assets/social/twitter.png" alt="icon for twitter"></a></li>
-            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.facebook.com"><img src="assets/social/facebook.png" alt="icon for facebook"></a></li>
-            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.youtube.com"><img  src="assets/social/youtube.png" alt="icon for youtube"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="https://twitter.com"><img class="footer__content__item__link__img" src="assets/social/twitter.png" alt="icon for twitter"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.facebook.com"><img class="footer__content__item__link__img" src="assets/social/facebook.png" alt="icon for facebook"></a></li>
+            <li class="footer__content__item"><a class="footer__content__item__link" href="http://www.youtube.com"><img class="footer__content__item__link__img" src="assets/social/youtube.png" alt="icon for youtube"></a></li>
         </ul>
     </footer>
 
