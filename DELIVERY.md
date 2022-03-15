@@ -3,7 +3,7 @@
 ## Github Pages:
 
 Enlace:
-[Github-Pages ]()
+[Github-Pages ](https://ralfxdev.github.io/practica1-ralfxdev/)
 
 ## Capturas de Pantalla:
 
@@ -29,3 +29,4 @@ Enlace:
 Solo presenté esas dificultades a la hora de realizar la práctica.
 
 ### Validación de Código:
+![Alt text](./assets/screenshots/validation.png "validation")
